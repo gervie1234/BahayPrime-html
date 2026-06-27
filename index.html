@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BahayPrime Realty is a fictional premium Philippine real estate company offering homes, condominiums, townhouses, commercial spaces, and investment properties."
+    />
+    <meta
+      name="keywords"
+      content="Philippine real estate, house and lot, condominium, townhouse, commercial property, investment property"
+    />
+    <meta name="author" content="BahayPrime Realty" />
+    <meta property="og:title" content="BahayPrime Realty | Premium Philippine Real Estate" />
+    <meta
+      property="og:description"
+      content="Discover thoughtfully planned communities, premium residences, and investment properties built for modern Filipino living."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1600&q=85"
+    />
+    <title>BahayPrime Realty | Premium Philippine Real Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="BahayPrime Realty home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img">
+              <path d="M10 34 32 16l22 18" />
+              <path d="M18 31v19h28V31" />
+              <path d="M27 50V38h10v12" />
+              <path d="M23 24h18" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>BahayPrime Realty</strong>
+            <small>Building Better Communities.</small>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="primary-menu">
+          <li><a href="#search">Search</a></li>
+          <li><a href="#communities">Communities</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#consultants">Consultants</a></li>
+          <li><a href="#calculator">Calculator</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="nav-cta" href="#contact">Schedule Site Visit</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <!-- Replace image: hero banner showing a modern Filipino residential community with tropical landscaping. -->
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Premium Philippine Real Estate</p>
+          <h1 id="hero-title">Find Your Dream Home Anywhere in the Philippines.</h1>
+          <p class="hero-copy">
+            Discover thoughtfully planned communities, premium residences, and investment properties built for modern
+            Filipino living.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#search">Search Property</a>
+            <a class="btn btn-ghost" href="#contact">Contact an Agent</a>
+          </div>
+          <div class="hero-floaters" aria-label="Property highlights">
+            <span class="glass float-card">Starting From <strong>PHP 4.8M</strong></span>
+            <span class="glass float-card">PAG-IBIG & Bank Financing Available</span>
+            <span class="glass float-card">Ready for Occupancy</span>
+            <span class="glass float-card"><strong>2,500+</strong> Happy Homeowners</span>
+          </div>
+        </div>
+        <aside class="hero-insight glass reveal" aria-label="Featured launch">
+          <span>Featured Launch</span>
+          <h2>Sierra Verde Residences</h2>
+          <p>Laguna house-and-lot community near schools, leisure estates, and emerging business corridors.</p>
+          <strong>From PHP 4.8M</strong>
+        </aside>
+      </section>
+
+      <section class="search-section" id="search" aria-labelledby="search-title">
+        <div class="search-panel glass reveal">
+          <div class="search-heading">
+            <p class="section-kicker">Property Search</p>
+            <h2 id="search-title">Refine your next move.</h2>
+          </div>
+          <form class="property-search" aria-label="Property search filters">
+            <label>
+              <span>Property Type</span>
+              <select name="property-type">
+                <option>Any Property</option>
+                <option>House & Lot</option>
+                <option>Townhouse</option>
+                <option>Condominium</option>
+                <option>Commercial Space</option>
+                <option>Investment Property</option>
+              </select>
+            </label>
+            <label>
+              <span>Location</span>
+              <select name="location">
+                <option>Anywhere in the Philippines</option>
+                <option>Metro Manila</option>
+                <option>Laguna</option>
+                <option>Cavite</option>
+                <option>Cebu</option>
+                <option>Davao</option>
+                <option>Pampanga</option>
+                <option>Bulacan</option>
+              </select>
+            </label>
+            <label>
+              <span>Price Range</span>
+              <select name="price-range">
+                <option>Any Budget</option>
+                <option>PHP 2M - 5M</option>
+                <option>PHP 5M - 10M</option>
+                <option>PHP 10M - 20M</option>
+                <option>PHP 20M+</option>
+              </select>
+            </label>
+            <label>
+              <span>Bedrooms</span>
+              <select name="bedrooms">
+                <option>Any</option>
+                <option>Studio</option>
+                <option>1 Bedroom</option>
+                <option>2 Bedrooms</option>
+                <option>3 Bedrooms</option>
+                <option>4+ Bedrooms</option>
+              </select>
+            </label>
+            <label class="check-field">
+              <input type="checkbox" name="ready" />
+              <span>Ready for Occupancy</span>
+            </label>
+            <label class="check-field">
+              <input type="checkbox" name="preselling" />
+              <span>Pre-selling</span>
+            </label>
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section communities" id="communities">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Featured Communities</p>
+          <h2>Philippine-inspired developments for every life stage.</h2>
+        </div>
+        <div class="property-grid">
+          <article class="property-card reveal">
+            <!-- Replace image: tropical house and lot development in Laguna. -->
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Modern house in a landscaped residential community" />
+              <span class="property-badge">New</span>
+            </div>
+            <div class="property-body">
+              <div class="property-topline"><span>From PHP 4.8M</span><span>Laguna</span></div>
+              <h3>Sierra Verde Residences</h3>
+              <p>House & Lot</p>
+              <dl class="property-specs">
+                <div><dt>Bedrooms</dt><dd><span class="spec-icon bed"></span>3-4</dd></div>
+                <div><dt>Baths</dt><dd><span class="spec-icon bath"></span>2</dd></div>
+                <div><dt>Garage</dt><dd><span class="spec-icon garage"></span>1</dd></div>
+                <div><dt>Floor Area</dt><dd><span class="spec-icon floor"></span>96 sqm</dd></div>
+                <div><dt>Lot Area</dt><dd><span class="spec-icon lot"></span>120 sqm</dd></div>
+              </dl>
+              <a class="btn btn-outline" href="#contact">View Details</a>
+            </div>
+          </article>
+          <article class="property-card reveal">
+            <!-- Replace image: suburban townhouse or house community in Cavite. -->
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85" alt="Contemporary home exterior with garden landscaping" />
+              <span class="property-badge">Best Seller</span>
+            </div>
+            <div class="property-body">
+              <div class="property-topline"><span>From PHP 3.9M</span><span>Cavite</span></div>
+              <h3>Maharlika Gardens</h3>
+              <p>Townhouse</p>
+              <dl class="property-specs">
+                <div><dt>Bedrooms</dt><dd><span class="spec-icon bed"></span>3</dd></div>
+                <div><dt>Baths</dt><dd><span class="spec-icon bath"></span>2</dd></div>
+                <div><dt>Garage</dt><dd><span class="spec-icon garage"></span>1</dd></div>
+                <div><dt>Floor Area</dt><dd><span class="spec-icon floor"></span>82 sqm</dd></div>
+                <div><dt>Lot Area</dt><dd><span class="spec-icon lot"></span>72 sqm</dd></div>
+              </dl>
+              <a class="btn btn-outline" href="#contact">View Details</a>
+            </div>
+          </article>
+          <article class="property-card reveal">
+            <!-- Replace image: premium condominium tower or urban residence in Cebu. -->
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=85" alt="Modern condominium towers with balconies" />
+              <span class="property-badge">Preselling</span>
+            </div>
+            <div class="property-body">
+              <div class="property-topline"><span>From PHP 6.2M</span><span>Cebu</span></div>
+              <h3>Pacific Heights</h3>
+              <p>Condominium</p>
+              <dl class="property-specs">
+                <div><dt>Bedrooms</dt><dd><span class="spec-icon bed"></span>1-3</dd></div>
+                <div><dt>Baths</dt><dd><span class="spec-icon bath"></span>1-2</dd></div>
+                <div><dt>Parking</dt><dd><span class="spec-icon garage"></span>Opt.</dd></div>
+                <div><dt>Floor Area</dt><dd><span class="spec-icon floor"></span>54 sqm</dd></div>
+                <div><dt>Lot Area</dt><dd><span class="spec-icon lot"></span>N/A</dd></div>
+              </dl>
+              <a class="btn btn-outline" href="#contact">View Details</a>
+            </div>
+          </article>
+          <article class="property-card reveal">
+            <!-- Replace image: upscale Davao hillside community with greenery. -->
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&w=1000&q=85" alt="Luxury modern home surrounded by tropical greenery" />
+              <span class="property-badge">Ready for Occupancy</span>
+            </div>
+            <div class="property-body">
+              <div class="property-topline"><span>From PHP 7.5M</span><span>Davao</span></div>
+              <h3>Emerald Hills</h3>
+              <p>House & Lot</p>
+              <dl class="property-specs">
+                <div><dt>Bedrooms</dt><dd><span class="spec-icon bed"></span>4</dd></div>
+                <div><dt>Baths</dt><dd><span class="spec-icon bath"></span>3</dd></div>
+                <div><dt>Garage</dt><dd><span class="spec-icon garage"></span>2</dd></div>
+                <div><dt>Floor Area</dt><dd><span class="spec-icon floor"></span>142 sqm</dd></div>
+                <div><dt>Lot Area</dt><dd><span class="spec-icon lot"></span>180 sqm</dd></div>
+              </dl>
+              <a class="btn btn-outline" href="#contact">View Details</a>
+            </div>
+          </article>
+          <article class="property-card reveal">
+            <!-- Replace image: Pampanga residential estate with bright open streets. -->
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1000&q=85" alt="Suburban residential street with elegant homes" />
+              <span class="property-badge">Investment Pick</span>
+            </div>
+            <div class="property-body">
+              <div class="property-topline"><span>From PHP 5.1M</span><span>Pampanga</span></div>
+              <h3>Vista del Sol</h3>
+              <p>Residential Lots</p>
+              <dl class="property-specs">
+                <div><dt>Bedrooms</dt><dd><span class="spec-icon bed"></span>Custom</dd></div>
+                <div><dt>Baths</dt><dd><span class="spec-icon bath"></span>Custom</dd></div>
+                <div><dt>Garage</dt><dd><span class="spec-icon garage"></span>Custom</dd></div>
+                <div><dt>Floor Area</dt><dd><span class="spec-icon floor"></span>Buildable</dd></div>
+                <div><dt>Lot Area</dt><dd><span class="spec-icon lot"></span>150 sqm</dd></div>
+              </dl>
+              <a class="btn btn-outline" href="#contact">View Details</a>
+            </div>
+          </article>
+          <article class="property-card reveal">
+            <!-- Replace image: Bulacan mixed-use residential development. -->
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=85" alt="Modern Filipino-style home with clean facade" />
+              <span class="property-badge">Family Favorite</span>
+            </div>
+            <div class="property-body">
+              <div class="property-topline"><span>From PHP 4.2M</span><span>Bulacan</span></div>
+              <h3>Northpoint Residences</h3>
+              <p>House & Lot</p>
+              <dl class="property-specs">
+                <div><dt>Bedrooms</dt><dd><span class="spec-icon bed"></span>3</dd></div>
+                <div><dt>Baths</dt><dd><span class="spec-icon bath"></span>2</dd></div>
+                <div><dt>Garage</dt><dd><span class="spec-icon garage"></span>1</dd></div>
+                <div><dt>Floor Area</dt><dd><span class="spec-icon floor"></span>88 sqm</dd></div>
+                <div><dt>Lot Area</dt><dd><span class="spec-icon lot"></span>100 sqm</dd></div>
+              </dl>
+              <a class="btn btn-outline" href="#contact">View Details</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section categories" id="categories">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Property Categories</p>
+          <h2>Curated options for families, professionals, and investors.</h2>
+        </div>
+        <div class="category-grid">
+          <article class="category-card reveal"><span class="line-icon home"></span><strong>01</strong><h3>House & Lot</h3><p>Family-ready homes in secure master-planned neighborhoods.</p></article>
+          <article class="category-card reveal"><span class="line-icon townhouse"></span><strong>02</strong><h3>Townhouse</h3><p>Efficient city-fringe residences with practical layouts.</p></article>
+          <article class="category-card reveal"><span class="line-icon condo"></span><strong>03</strong><h3>Condominium</h3><p>Urban living near business districts, schools, and lifestyle hubs.</p></article>
+          <article class="category-card reveal"><span class="line-icon lot"></span><strong>04</strong><h3>Residential Lots</h3><p>Build-ready parcels in growing residential corridors.</p></article>
+          <article class="category-card reveal"><span class="line-icon commercial"></span><strong>05</strong><h3>Commercial Spaces</h3><p>Retail and office assets in high-footfall destinations.</p></article>
+          <article class="category-card reveal"><span class="line-icon investment"></span><strong>06</strong><h3>Investment Properties</h3><p>Preselling and income-focused opportunities with growth potential.</p></article>
+        </div>
+      </section>
+
+      <section class="section why">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Why Choose Us</p>
+          <h2>High-touch guidance from search to turnover.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><span class="line-icon expert"></span><h3>Trusted Local Experts</h3><p>Neighborhood intelligence across Luzon, Visayas, and Mindanao.</p></article>
+          <article class="feature-card reveal"><span class="line-icon finance"></span><h3>Flexible Payment Options</h3><p>Developer terms, bank financing guidance, and staged payment planning.</p></article>
+          <article class="feature-card reveal"><span class="line-icon pin"></span><h3>Prime Locations</h3><p>Properties near schools, transport, growth districts, and leisure corridors.</p></article>
+          <article class="feature-card reveal"><span class="line-icon shield"></span><h3>Secure Investments</h3><p>Fictional listings modeled around long-term value and clean ownership journeys.</p></article>
+          <article class="feature-card reveal"><span class="line-icon check"></span><h3>Verified Property Listings</h3><p>Clear details, transparent availability, and guided documentation review.</p></article>
+          <article class="feature-card reveal"><span class="line-icon headset"></span><h3>Dedicated Property Consultants</h3><p>Responsive support for viewings, reservations, and post-sale concerns.</p></article>
+        </div>
+      </section>
+
+      <section class="stats-band" aria-label="Company statistics">
+        <div class="stat-item reveal"><strong data-count="2500" data-suffix="+">0</strong><span>Happy Homeowners</span></div>
+        <div class="stat-item reveal"><strong data-count="180" data-suffix="+">0</strong><span>Residential Communities</span></div>
+        <div class="stat-item reveal"><strong data-count="12000" data-suffix="+">0</strong><span>Properties Sold</span></div>
+        <div class="stat-item reveal"><strong data-count="25">0</strong><span>Philippine Cities Served</span></div>
+      </section>
+
+      <section class="section consultants" id="consultants">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Property Consultants</p>
+          <h2>Meet the team behind your next address.</h2>
+        </div>
+        <div class="agent-grid">
+          <article class="agent-card reveal">
+            <!-- Replace image: fictional Filipino male property consultant portrait. -->
+            <div class="agent-media"><img src="assets/images/miguel-santos.png" alt="Miguel Santos, Senior Property Consultant" /><span>Verified</span></div>
+            <div><h3>Miguel Santos</h3><p>Senior Property Consultant</p><span class="agent-exp">12 years experience</span><span class="rating" aria-label="5 star rating">â˜…â˜…â˜…â˜…â˜…</span><a class="btn btn-outline" href="#contact">Contact</a></div>
+          </article>
+          <article class="agent-card reveal">
+            <!-- Replace image: fictional Filipina property consultant portrait. -->
+            <div class="agent-media"><img src="assets/images/angela-cruz.png" alt="Angela Cruz, Residential Sales Lead" /><span>Verified</span></div>
+            <div><h3>Angela Cruz</h3><p>Residential Sales Lead</p><span class="agent-exp">9 years experience</span><span class="rating" aria-label="5 star rating">â˜…â˜…â˜…â˜…â˜…</span><a class="btn btn-outline" href="#contact">Contact</a></div>
+          </article>
+          <article class="agent-card reveal">
+            <!-- Replace image: fictional Filipino investment property advisor portrait. -->
+            <div class="agent-media"><img src="assets/images/daniel-reyes.png" alt="Daniel Reyes, Investment Property Advisor" /><span>Verified</span></div>
+            <div><h3>Daniel Reyes</h3><p>Investment Property Advisor</p><span class="agent-exp">10 years experience</span><span class="rating" aria-label="5 star rating">â˜…â˜…â˜…â˜…â˜…</span><a class="btn btn-outline" href="#contact">Contact</a></div>
+          </article>
+          <article class="agent-card reveal">
+            <!-- Replace image: fictional Filipina client relations manager portrait. -->
+            <div class="agent-media"><img src="assets/images/patricia-mendoza.png" alt="Patricia Mendoza, Client Relations Manager" /><span>Verified</span></div>
+            <div><h3>Patricia Mendoza</h3><p>Client Relations Manager</p><span class="agent-exp">8 years experience</span><span class="rating" aria-label="5 star rating">â˜…â˜…â˜…â˜…â˜…</span><a class="btn btn-outline" href="#contact">Contact</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section calculator-section" id="calculator">
+        <div class="calculator-grid">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Mortgage Calculator</p>
+            <h2>Preview a more confident monthly plan.</h2>
+            <p>
+              Explore an indicative estimate for planning conversations. Final terms depend on bank approval,
+              developer promos, fees, and documentation.
+            </p>
+          </div>
+          <form class="calculator-card glass reveal" aria-label="Mortgage calculator">
+            <label class="slider-field"><span>Property Price <output data-price-label>PHP 5,200,000</output></span><input type="range" data-price value="5200000" min="2000000" max="25000000" step="100000" /></label>
+            <label class="slider-field"><span>Down Payment <output data-down-label>PHP 1,040,000</output></span><input type="range" data-down value="1040000" min="200000" max="8000000" step="50000" /></label>
+            <label class="slider-field"><span>Interest Rate <output data-rate-label>7.25%</output></span><input type="range" data-rate value="7.25" min="4" max="12" step="0.05" /></label>
+            <label class="slider-field"><span>Loan Term <output data-term-label>20 years</output></span><input type="range" data-term value="20" min="5" max="30" step="1" /></label>
+            <div class="payment-output">
+              <span>Estimated Monthly Payment</span>
+              <strong data-payment>PHP 32,980</strong>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Testimonials</p>
+          <h2>Stories from Filipino clients who found the right fit.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote class="glass reveal"><p>"BahayPrime made our Quezon City condo search feel simple and premium from the first call."</p><cite>Mariel Tuazon, Quezon City</cite></blockquote>
+          <blockquote class="glass reveal"><p>"Our Laguna home reservation was guided clearly. The team helped us compare terms without pressure."</p><cite>Ramon and Liza Dela Cruz, Laguna</cite></blockquote>
+          <blockquote class="glass reveal"><p>"We wanted a Cebu investment unit and received practical location insights before reserving."</p><cite>Katrina Uy, Cebu</cite></blockquote>
+          <blockquote class="glass reveal"><p>"The Davao property viewing was organized, professional, and matched what our family needed."</p><cite>Jonathan Mercado, Davao</cite></blockquote>
+        </div>
+      </section>
+
+      <section class="section process">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Service Process</p>
+          <h2>A polished path from shortlist to move in.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-step reveal"><span class="line-icon search"></span><strong>1</strong><h3>Search Your Property</h3></article>
+          <article class="timeline-step reveal"><span class="line-icon calendar"></span><strong>2</strong><h3>Schedule Site Viewing</h3></article>
+          <article class="timeline-step reveal"><span class="line-icon finance"></span><strong>3</strong><h3>Financing Consultation</h3></article>
+          <article class="timeline-step reveal"><span class="line-icon check"></span><strong>4</strong><h3>Reservation</h3></article>
+          <article class="timeline-step reveal"><span class="line-icon document"></span><strong>5</strong><h3>Documentation</h3></article>
+          <article class="timeline-step reveal"><span class="line-icon home"></span><strong>6</strong><h3>Move In</h3></article>
+        </div>
+      </section>
+
+      <section class="cta-section reveal">
+        <div>
+          <p class="section-kicker">Private Consultation</p>
+          <h2>Let's Find the Perfect Property for You.</h2>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#communities">Browse Properties</a>
+          <a class="btn btn-ghost" href="#contact">Schedule Site Visit</a>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <p class="section-kicker">Contact</p>
+            <h2>Talk to a BahayPrime consultant.</h2>
+            <p>Send an inquiry and a fictional property consultant will help organize your shortlist, viewing schedule, and next steps.</p>
+            <div class="contact-details">
+              <span><strong>Office Address</strong>18F Prime Meridian Tower, Ayala Avenue, Makati City, Philippines 1226</span>
+              <a href="tel:+63285550128"><strong>Phone</strong>+63 2 8555 0128</a>
+              <a href="mailto:hello@bahayprime.ph"><strong>Email</strong>hello@bahayprime.ph</a>
+              <span><strong>Business Hours</strong>Monday to Saturday, 9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="map-placeholder reveal" role="img" aria-label="Google Maps placeholder">
+              <span>Google Maps Placeholder</span>
+            </div>
+          </div>
+          <form class="contact-form glass reveal" aria-label="Inquiry form">
+            <label><span>Name</span><input type="text" name="name" autocomplete="name" required /></label>
+            <label><span>Email</span><input type="email" name="email" autocomplete="email" required /></label>
+            <label><span>Phone</span><input type="tel" name="phone" autocomplete="tel" /></label>
+            <label><span>Interested In</span><select name="interest"><option>House & Lot</option><option>Condominium</option><option>Townhouse</option><option>Commercial Space</option><option>Investment Property</option></select></label>
+            <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter-inner reveal">
+          <h2>Receive the latest property launches and exclusive investment opportunities.</h2>
+          <form class="newsletter-form" aria-label="Newsletter sign up">
+            <input type="email" name="newsletter-email" placeholder="Email address" required />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64" role="img">
+                <path d="M10 34 32 16l22 18" />
+                <path d="M18 31v19h28V31" />
+                <path d="M27 50V38h10v12" />
+                <path d="M23 24h18" />
+              </svg>
+            </span>
+            <span class="brand-copy">
+              <strong>BahayPrime Realty</strong>
+              <small>Building Better Communities.</small>
+            </span>
+          </a>
+          <p>
+            BahayPrime Realty is a premium Philippine real estate brand specializing in
+            thoughtfully curated residential communities, house-and-lot developments,
+            condominiums, and investment properties across Metro Manila and major provincial
+            growth centers.
+          </p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <a href="#search">Property Search</a>
+          <a href="#communities">Featured Communities</a>
+          <a href="#calculator">Mortgage Calculator</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h3>Featured Locations</h3>
+          <a href="#communities">Laguna</a>
+          <a href="#communities">Cavite</a>
+          <a href="#communities">Cebu</a>
+          <a href="#communities">Davao</a>
+        </div>
+        <div>
+          <h3>Property Categories</h3>
+          <a href="#categories">House & Lot</a>
+          <a href="#categories">Townhouse</a>
+          <a href="#categories">Condominium</a>
+          <a href="#categories">Investment Properties</a>
+        </div>
+        <div>
+          <h3>Contact Information</h3>
+          <span>+63 2 8555 0128</span>
+          <span>hello@bahayprime.ph</span>
+          <span>Makati City, Philippines</span>
+          <div class="socials" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <p>Receive exclusive launches, site viewing invites, and investment notes.</p>
+          <form class="footer-newsletter" aria-label="Footer newsletter">
+            <input type="email" placeholder="Email address" required />
+            <button class="btn btn-primary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 BahayPrime Realty.</p>
+        <a class="back-to-top" href="#home" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 19V5" />
+            <path d="m5 12 7-7 7 7" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
+
+
